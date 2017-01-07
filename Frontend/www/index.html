@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Pizza</title>
+
+    <!-- Bootsrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <!-- CSS основний файл -->
+    <link rel="stylesheet" href="assets/css/main.css">
+
+
+</head>
+<body>
+<div class="discount-label">
+    <div class="discount-text">
+        Цього тижня на все
+    </div>
+    <span class="discount-amount">
+        -20%
+    </span>
+</div>
+
+
+
+<div class="page-wrapper container-fluid">
+            <div class="main-header">
+                <h2>
+                    <span class="all-pizza-title">Усі піци
+                    </span>
+                    <span class="pizza-count-badge pizzas-displayed">0</span>
+                </h2>
+            </div>
+            <div class="all-pizza-types-wrapper">
+                <ul class="nav nav-pills pizza-types-nav">
+                    <li role="presentation" id="filter-all"><a href="#">Усі</a></li>
+                    <li role="presentation" id="filter-meat"><a href="#">Мясні</a></li>
+                    <li role="presentation" id="filter-pineapple"><a href="#">З ананасами</a></li>
+                    <li role="presentation" id="filter-mushrooms"><a href="#">З грибами</a></li>
+                    <li role="presentation" id="filter-seafood"><a href="#">З морепродуктами</a></li>
+                    <li role="presentation" id="filter-vega"><a href="#">Вега</a></li>
+                </ul>
+            </div>
+    <div class="row" id="pizza_list">
+        <div class="main-content"></div>
+        </div>
+        </div>
+        <div class="right-panel">
+            <div class="top-panel-row">
+                <span class="orders-count-label">
+                    Замовлення
+                </span> <span class="pizza-count-badge" id="number_of_pizza">0</span>
+                <span class="clear-order-label">
+                    Очистити замовлення
+                </span>
+            </div>
+            <div class="main-panel-row" id="cart">
+                <div class="no-order-text">
+                    Пусто в холодильнику?<br/ >
+                    Замовте піцу!
+                </div>
+            </div>
+            <div class="bottom-panel-row">
+                <h4 class="order-sum"></h4>
+                <button type="button" class="btn btn-warning btn-lg btn-block button-order" disabled="">
+                Замовити
+            </button>
+            </div>
+        </div>
+</div>
+
+
+<!-- jQuery JavaScript -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"> </script>
+
+<!--Bootsrap JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+<!--Own JavaScript -->
+<script type="text/javascript"  src="assets/js/main.js"> </script>
+</body>
+</html>

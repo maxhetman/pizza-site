@@ -1,0 +1,23 @@
+<div class="ordered-item">
+    <img class="ordered-pizza" src="assets/images/pizza_9.jpg" alt="">
+    <div class="order-title"><%= cart_item.pizza.title %> 
+ <%if (cart_item.size == 'big_size') {%>  (Велика)  <%}%>
+ <%if (cart_item.size == 'small_size') {%>  (Мала)  <%}%> 
+</div>
+    <div class="order-details">
+        <img class="diagonal-icon" src="assets/images/size-icon.svg">
+        <span class="diagonal"><%= cart_item.pizza[cart_item.size].size %></span>
+        <img class="gram-icon" src="assets/images/weight.svg"><span class="gram"><%= cart_item.pizza[cart_item.size].weight %></span>
+    </div>
+    <div class="action-box">
+        <%if (window.location.pathname.endsWith('index.html') || window.location.pathname=='/') {%> 
+        <span class="pizza-price"><%= cart_item.pizza[cart_item.size].price*cart_item.quantity %></span>
+        <button class="btn-circle btn-minus">-</button>
+        <span class="pizza-count"><%= cart_item.quantity %></span>
+        <button class="btn-circle btn-plus">+</button>
+         <% } else{ %>  
+            <span class="pizza-price"><%= cart_item.pizza[cart_item.size].price*cart_item.quantity %></span>
+            <span class="pizza-count-label">(<%= cart_item.quantity %> штук)</span>
+         <% } %>
+    </div>
+</div>
